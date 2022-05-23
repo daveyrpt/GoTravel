@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>GoTravel Malaysia</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!-- swiper cdn link -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- header start -->
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><span>G</span>o<span>T</span>ravel</a>
+
+            <nav class="navigationBar">
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search ..">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+
+        </header>
+        
+
+        <!-- login form container start -->
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="Enter your email">
+                <input type="password" class="box" placeholder="Enter your password">
+                <input type="submit" value="log in" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+                <p>Forget password <a href="#">Click here</a></p>
+                <p>Don't have account? <a href="#">Register now</a></p>
+            </form>
+        </div>
+        <!-- login form container end --> 
+        <!-- header end -->
+
+        <!-- home section start -->
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3>Adventure is worthwhile</h3>
+                <p>travel to new places around Malaysia with more than 1000+ places to visit</p>
+                <a href="#" class="btn">discover more</a>
+            </div>
+
+            <div class="controls">
+                <span class="vid-btn" data-src="media/Malaysia.m4v"></span>
+                <span class="vid-btn active" data-src="media/Visit Malaysia Official Video.mp4"></span>
+                <span class="vid-btn" data-src="media/Visit Malaysia Official Video.mp4"></span>
+            </div>
+
+            <div class="video-container">
+                <video src="media/Malaysia.m4v" id="video-slider" loop autoplay muted></video>
+            </div>
+
+        </section>
+        <!-- home section end -->
+
+        <!-- Booking section start -->
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>b</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+                <span class="space"></span>
+                <span>n</span>
+                <span>o</span>
+                <span>w</span>
+            </h1>
+
+            <div class="row">
+                <div class="image">
+                    <img src="media/background.jpg" alt="">
+                </div>
+                
+                <form action="">
+                    <div class="inputBox">
+                        <h3>where to</h3>
+                        <input type="text" placeholder="location (e.g. Kota Kinabalu)">
+                    </div>
+                    <div class="inputBox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputBox">
+                        <h3>check-in</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>check-out</h3>
+                        <input type="date">
+                    </div>
+
+                    <input type="submit" class="btn" value="book now">
+                </form>
+            </div>
+        </section>
+
+        <!-- Booking section end -->
+
+        <!-- Packages section start -->
+        <section class="packages" id="packages">
+            <h1 class="heading">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="media/kk.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> Kota Kinabalu </h3>
+                        <p>Kota Kinabalu is the state capital of Sabah, Malaysia. It is also the capital of the Kota Kinabalu District as well as the West Coast Division of Sabah. The city is located on the northwest coast of Borneo facing the South China Sea.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> RM199 <span>RM499</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="media/kuching.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> Kuching </h3>
+                        <p>Kuching, officially the City of Kuching, is the capital and the most populous city in the state of Sarawak in Malaysia. It is also the capital of Kuching Division.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> RM399 <span>RM499</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="media/miri.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> Miri </h3>
+                        <p>Miri is a coastal city in northeastern Sarawak, Malaysia, located near the border of Brunei, on the island of Borneo. The city covers an area of 997.43 square kilometres, located 798 kilometres northeast of Kuching and 329 kilometres southwest of Kota Kinabalu.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> RM299 <span>RM399</span> </div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </section>
+        <!-- Packages section end -->
+
+        <!-- Services section start -->
+
+        <section class="services" id="services">
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable place to stay</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drink</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest road</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventure</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis.</p>
+            </div>
+            </div>
+        </section>
+        <!-- Services section end -->
+
+        <!-- Gallery section start -->
+        <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="media/gal-1.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places to visit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Eu lobortis elementum nibh tellus.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="media/gal-2.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places to visit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Eu lobortis elementum nibh tellus.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="media/gal-3.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places to visit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Eu lobortis elementum nibh tellus.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="media/gal-4.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places to visit</h3>
+                        <p>.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Eu lobortis elementum nibh tellus.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery section end -->
+
+        <!-- Review section start -->
+        <section class="review" id="review">
+
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+            </h1>
+
+            <div class="swiper-container review-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="media/logo.png" alt="">
+                            <h3>C**** P***</h3>
+                            <p>Clean and tidy room to stay.</p>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="media/logo.png" alt="">
+                            <h3>H*** R***</h3>
+                            <p>Great place to stay! Staff also friendly.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="media/logo.png" alt="">
+                            <h3>C****** B******</h3>
+                            <p>Cheaper compare to other options</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="media/logo.png" alt="">
+                            <h3>D**** H**</h3>
+                            <p>Got problem with the packages. Staff willing to help. Will come again next time!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Review section end -->
+
+        <!-- Contact section start -->
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+            </h1>
+
+            <div class="row">
+                <div class="image">
+                    <img src="media/contact-img.svg" alt="" >
+                </div>
+
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="subject">
+                    </div>
+
+                    <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="send message">
+                </form>
+            </div>
+
+        </section>
+        <!-- Contact section end -->
+        
+        <!-- Brand section start -->
+        <section class="brand-container">
+            <div class="swiper-container brand-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="media/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="media/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="media/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="media/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="media/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="media/6.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- Brand section end -->
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>Greeting we are company that focus on providing the best services for traveler to have fun in more than dozens of places to enjoy around Malaysia.</p>
+                </div>
+
+                <div class="box">
+                    <h3>physical branch location</h3>
+                    <a href="#">Petaling Jaya</a>
+                    <a href="#">Kota Kinabalu</a>
+                    <a href="#">Kuching</a>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">book</a>
+                    <a href="#">packages</a>
+                    <a href="#">services</a>
+                    <a href="#">gallery</a>
+                    <a href="#">review</a>
+                    <a href="#">contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                </div>
+            </div>
+
+           
+        </section>
+
+        <!-- swiper cdn js -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- custom js -->
+        <script src="script.js"></script>
+
+    </body>
+</html>
