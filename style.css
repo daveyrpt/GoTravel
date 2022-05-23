@@ -90,7 +90,7 @@ header{
 }
 
 header .logo{
-    float: left;
+  float: left;
   font-size: 2.5rem;
   font-weight: bolder;
   color:#fff;
@@ -675,10 +675,27 @@ header .search-bar-container label:hover{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
   html{
     font-size: 50%;
   }
+
+  header a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  header .icons {
+    float: none;
+
+  }
+
+  header .logo {
+    float: none;
+
+  }
+  
 
   .heading span{
     font-size: 2.5rem;
