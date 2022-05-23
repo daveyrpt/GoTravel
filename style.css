@@ -79,7 +79,7 @@ section{
 }
 
 header{
-  position: absolute; 
+  position: fixed; 
   top:0; left: 0; right:0;
   background:#333;
   z-index: 1000;
@@ -90,6 +90,7 @@ header{
 }
 
 header .logo{
+    float: left;
   font-size: 2.5rem;
   font-weight: bolder;
   color:#fff;
@@ -676,22 +677,10 @@ body{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
   html{
     font-size: 50%;
   }
-
-  header .icons{
-    float: none;
-display: block;
-
-}
-
-header .search-bar-container{
-    float: none;
-display: block;
-
-}
 
   .heading span{
     font-size: 2.5rem;
