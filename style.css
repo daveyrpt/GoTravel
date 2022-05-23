@@ -630,9 +630,7 @@ header .search-bar-container label:hover{
 .footer .credit span{
     color: var(--orange);
 }
-body{
-    height: 300rem;
-}
+
 /* Media queries */
 @media screen and  (max-width:1200px){
     html{
