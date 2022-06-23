@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --orange:#31aa46;
+    --green:#31aa46;
 
 }
 
@@ -30,7 +30,7 @@
 }
 
 *::selection{ /* highlight color */
-    background: var(--orange);
+    background: var(--green);
     color:#fff;
 }
 
@@ -53,7 +53,7 @@ section{
 .heading span{
     font-size: 3.5rem;
     background: rgba(255,165,0,.2);
-    color: var(--orange);
+    color: var(--green);
     border-radius: .5rem;
     padding: .2rem 1rem;
 }
@@ -65,17 +65,17 @@ section{
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    background: var(--orange);
+    background: var(--green);
     color: #fff;
     padding: .8rem 3rem;
-    border: .2rem solid var(--orange);
+    border: .2rem solid var(--green);
     cursor: pointer;
     font-size: 1.5rem;
 }
 
 .btn:hover{
     background: rgba(255,165,0,.2);
-    color: var(--orange);
+    color: var(--green);
 }
 
 header{
@@ -98,7 +98,7 @@ header .logo{
 }
 
 header .logo span{
-  color:var(--orange);
+  color:var(--green);
 }
 
 
@@ -110,7 +110,7 @@ header .navigationBar a{
 }
 
 header .navigationBar a:hover{
-    color: var(--orange);
+    color: var(--green);
    /* font-size: 2rem;
     margin: 8rem; */
 
@@ -125,7 +125,7 @@ header .icons i{
 }
 
 header .icons i:hover{
-    color: var(--orange);
+    color: var(--green);
 }
 
 header .search-bar-container{
@@ -161,7 +161,7 @@ header .search-bar-container label{
 }
 
 header .search-bar-container label:hover{
-    color: var(--orange);
+    color: var(--green);
 }
 
 #menu-bar{
@@ -218,7 +218,7 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form .box:focus{
-    border-color: var(--orange);
+    border-color: var(--green);
 }
 
 .login-form-container form #remember{
@@ -241,11 +241,11 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form p a{
-    color: var(--orange);
+    color: var(--green);
 }
 
 .login-form-container form p a:hover{
-    color: var(--orange);
+    color: var(--green);
     text-decoration: underline;
 }
 
@@ -314,7 +314,7 @@ header .search-bar-container label:hover{
 }
 
 .home .controls .vid-btn.active{
-    background: var(--orange);
+    background: var(--green);
 }
 
 .book .row{
@@ -387,7 +387,7 @@ header .search-bar-container label:hover{
 }
 
 .packages .box-container .box .content h3 i{
-    color: var(--orange);
+    color: var(--green);
 }
 
 .packages .box-container .box .content p{
@@ -398,7 +398,7 @@ header .search-bar-container label:hover{
 
 .packages .box-container .box .stars i{
     font-size: 1.7rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .packages .box-container .box .content .price{
@@ -429,7 +429,7 @@ header .search-bar-container label:hover{
 .services .box-container .box i{
     padding: 1rem;
     font-size: 5rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .services .box-container .box h3{
@@ -486,7 +486,7 @@ header .search-bar-container label:hover{
 
 .gallery .box-container .box .content h3{
     font-size: 2.5rem;
-    color: var(--orange);
+    color: var(--green);
 }
 
 .gallery .box-container .box .content p{
@@ -526,7 +526,7 @@ header .search-bar-container label:hover{
 }
 
 .review .box .stars i{
-    color: var(--orange);
+    color: var(--green);
     font-size: 1.7rem;
 }
 
@@ -574,6 +574,17 @@ header .search-bar-container label:hover{
     width: 100%;
 }
 
+.contact .row .contact-form .submitbtn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--green);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--green);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 .brand-container{
     text-align: center;
 }
@@ -613,7 +624,7 @@ header .search-bar-container label:hover{
 }
 
 .footer .box-container .box a:hover{
-    color: var(--orange);
+    color: var(--green);
     text-decoration: underline;
 }
 
@@ -628,7 +639,7 @@ header .search-bar-container label:hover{
 }
 
 .footer .credit span{
-    color: var(--orange);
+    color: var(--green);
 }
 
 /* Media queries */

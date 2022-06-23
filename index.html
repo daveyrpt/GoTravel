@@ -401,19 +401,19 @@
                     <img src="media/travel.png" alt="" >
                 </div>
 
-                <form action="">
+                <form class="contact-form">
                     <div class="inputBox">
-                        <input type="text" placeholder="name">
-                        <input type="email" placeholder="email">
+                        <input type="text" class="full-name" placeholder="name">
+                        <input type="email" class="email-address" placeholder="email">
                     </div>
 
                     <div class="inputBox">
-                        <input type="number" placeholder="number">
-                        <input type="text" placeholder="subject">
+                        <input type="number" class="contact-number" placeholder="contact">
+                        <input type="text" class="subject" placeholder="subject">
                     </div>
 
-                    <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" class="btn" value="send message">
+                    <textarea placeholder="message" class="full-message" name="" id="" cols="30" rows="10"></textarea>
+                    <button class="submitbtn">Submit</button>
                 </form>
             </div>
 
@@ -472,10 +472,69 @@
         </section>
 
 
-        <!-- swiper cdn js -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <!-- custom js -->
         <script src="script.js"></script>
+        <!-- swiper cdn js -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- Firebase -->
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyBnHjxRAHgK2k6Xlevk2hoY0FKsPPUiAqQ",
+              authDomain: "gotravel-66e7f.firebaseapp.com",
+              projectId: "gotravel-66e7f",
+              storageBucket: "gotravel-66e7f.appspot.com",
+              messagingSenderId: "1042711893533",
+              appId: "1:1042711893533:web:2075376674c93de87ad8f4"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+
+            import {
+                getFirestore, doc, getDoc, setDoc, collection, addDoc, updateDoc, deleteDoc, deleteField
+            }
+
+            from "https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js";
+
+            const db = getFirestore();
+
+            const contactForm = document.querySelector('.contact-form');
+            const fullName = document.querySelector('.full-name');
+            const emailAddress = document.querySelector('.email-address');
+            const contactNumber = document.querySelector('.contact-number');
+            const subject = document.querySelector('.subject');
+            const fullMessage = document.querySelector('.full-message');
+            const submitButton = document.querySelector('.submitbtn');
+
+            async function AddDocument_AutoID() {
+                var ref = collection(db, 'contactForm');
+
+                const docRef = await addDoc(
+                    ref, {
+                        fullName: fullName.value,
+                        emailAddress : emailAddress.value,
+                        contactNumber : contactNumber.value,
+                        subject : subject.value,
+                        fullMessage : fullMessage.value
+                    }
+                )
+                .then(() => {
+                    alert("Form successfully submitted");
+                })
+                .catch((error) => {
+                    alert("Failed to submit form" + error);
+                })
+            }
+
+            submitButton.addEventListener("click", AddDocument_AutoID);
+
+          </script>
 
     </body>
 </html>
